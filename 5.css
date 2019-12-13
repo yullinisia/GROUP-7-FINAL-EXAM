@@ -1,13 +1,8 @@
-<!DOCTYPE>
-<html>
-    * {
-	margin: 0;
-	padding: 0;
-  }
-
+/* setting for body */
 body {
 	background-color: grey;
-	font-family:"Times New Roman", Times, Serif;
+    background-image: url(marble.jpg); /* we add background image */
+	font-family:"Times New Roman", /* Times*/, Serif;
 	font-size: 12px;
 	line-height: 20px;
 	color: #222;
@@ -23,23 +18,26 @@ a:hover {
 	color: #4F5D7F;
        }
 
+/* setting for main layout */
 #wrap {
-	margin: 20px auto 10px auto;
-	width: 800px;
+    margin: auto;
+	width: 850px;
+    text-align: left;
 	background: #fff;
 	padding: 10px;
 	border: 5px solid #000;
 }
 
+/* setting for menu */
 #header {
-	height: 160px;
-background: #554d42 url(images/header.jpg) no-repeat;
+height: 160px;
+background: #554d42 url(yulli2.jpg) no-repeat;
 }
 #header h1 { 
 font-size: 50px;
-letter-spacing: -7px;
+letter-spacing: -4px;
 padding: 17px 0 0 10px;
-color: #FF5500;
+color: grey;
 }
 #header h1 a { 
 color: #D1DDEF;
@@ -51,6 +49,7 @@ letter-spacing: -7px;
 color: #fff;
 }
 
+/* setting for menu */
 #menu {
 height: 30px;
 line-height: 30px;
@@ -76,59 +75,41 @@ color: #aaa;
 text-decoration: none;
 }
 
+/* settinf for content */
 #content {
 padding: 0 20px 20px 0;
 }
 
-.right {
-float: right;
+
+.left {
+float: left;
 width: 600px;
 text-align: justify;
 padding-top: 5px;
 }
-.right h2 {
+.left h2 {
 font-size: 18px;
 font-weight: 100;
 padding: 15px 0 7px 0;
 }
-.right h2 a {
-text-decoration: none;
-}
-.right h2 a:hover {
 
-}
 
-.left {
-float: left;
-width: 160px;
-padding-top: 10px;
-}
-.left h2 {
-margin: 10px 0 0 0;
-padding-left: 10px;
-height: 24px;
-line-height: 24px;
-color: #7988AF;
-font-size: 15px;
-}
-.left ul {
-padding: 10px 0 15px 30px;
-list-style-type: square;
-color: #99AECD;
-}
-.left ul li a {
-text-decoration: none;
-font-weight: 600;
-}
-.left ul li a:hover {
-
+.right {
+float: right;
+width: 225px;
+padding-top: 25px;
 }
 
+/* setting for footer */
 #footer {
-text-align: center;
-font-size: 11px;
-color: #aaa;
+    width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	padding-top: 10px;
+	background-color: black;
+    color: white;
+	font-size: 16pt;
+	text-align: center;
+	position: relative;
+	clear: both;
 }
-#footer a { color: #aaa; }
-#footer a:hover { color: #111; }
-</html>
