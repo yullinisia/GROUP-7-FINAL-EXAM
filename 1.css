@@ -1,135 +1,173 @@
-/*setting for body*/
-
+/*setting for the body */
 body {
 	background-color: skyblue;
 	background-image: url(sky.jpg);
-    	text-align: center;
-   	font-family: Verdana, Tahoma, Helvetical;
-    	font-size: 12px;
 }
-
-/*setting for main layout*/
-#layout{
-	background: rgba(5, 20, 50, 0.7);
-	width: 850px;
-	margin: auto;
-	text-align: left;
-	padding: 2px;
-    
-}
-
-/*setting for the header*/
-#header{
+	
+/* setting for the header */ 
+header{
 	width: 100%;
-	height: 160px;
-	background-color: brown;
-    	background-image: url(yulli1.jpg);
-	opacity: 0.7;
-    	position: relative;
+    height: 230px;
+    background-color:aqua;
+    background-image: url(yulli1.jpg);
+    opacity: 0.7;
 }
 
-
-/*setting for menu */
-
-#menu{
-	width: 100%;
-	height: 40px;
-	background-color: lightskyblue;
-	opacity: 0.9;
-    	position: relative;
+/* setting for the wrapper */
+.wrap {
+	width: 950px;
+	margin:25px auto;
 }
 
-#menu ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#menu ul li{
-	float: left;
-}
-
-#menu ul li a{
-	float: left;
-	color: white;
-	padding: 12px 20px;
-	text-decoration: none;
+/*setting for the menu */
+.menu ul {
+	color:#fff;
+	list-style:none;
+	float:left;
+	padding:0;
+	width: 650px;
+	margin:0 0 0;
 	background: lightskyblue;
-	border-right: 1px solid rgba(5, 20, 50, 0.7);
-	text-shadow: 0 -1px 1px rgba(0,0,0,0,6);
+    opacity: 0.9;
+}
+ 
+.menu ul li {
+	margin:0;
+	float:left;
+}
+ 
+.menu ul a {
+	padding:20px;
+	display:block;
+	font-weight:600;
+	font-size: 14px;
+	color:#fff;
+	text-decoration: none;
+}
+ 
+.menu ul a:hover {
+	background:white;
+    color: lightblue;
 }
 
-#menu ul li:hover a{
-	color: #3479CF;
-	background: #fff;	
+/* setting for the sidebar */
+.sidebar {
+	float:right;
+	width:260px;
+}
+ 
+.sidebar .side {
+	padding:25px;
+	margin:0 0 25px;
+	background-color: lightblue;
+    color: dimgrey;
+	border-bottom: 2px solid #fff;
+}
+ 
+.sidebar .side:hover {
+	border-bottom: 2px solid #3498db;
 }
 
-/*setting for runningtext*/
-
-#runningtext{
-	width: 100%;
-	height: 25px;
-	padding-top: 7px;
-	margin: 5px 0 5px 0;
-	background-color: skyblue;
-	opacity: 0.9;
-    	color: white;
-	position: relative;
+/* setting for the content */
+.content1 {
+    float: left;
 }
-
-/* setting for content */
-#content {
-
-padding: 0 20px 20px 0;
-
-}
-
-.right {
-
-float: right;
-
-width: 600px;
-
-text-align: justify;
-
-padding-top: 5px;
-
-}
-
-.left {
-
-float: left;
-
-width: 225px;
-
-padding-top: 5px;
+.content {
     
-background-color: white rgba (8, 20, 80, 0.4);
-
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: lightskyblue;
+    opacity: 0.7;
+	border:1px solid #dedede;
+	
 }
 
-.left ul {
-
-padding: 10px 0 15px 30px;
-
-list-style-type:circle;
-
-color: blue;
-
-}
-
-/*setting for the footer*/
-
-#footer{
+/* setting for the footer */
+.footer{
 	width: 100%;
 	height: 50px;
 	margin-top: 5px;
 	padding-top: 10px;
-	background-color: skyblue;
+	background-color: deepskyblue;
 	opacity: 0.7;
-   	color: white;
+    color: white;
 	font-size: 16pt;
 	text-align: center;
-	position: relative;
-	clear: both;
+}
+
+/* setting to make the web responsive */
+ 
+@media screen and (max-width: 960px) {
+ 
+	.header {
+		position:inherit;
+	}
+ 
+	.wrap {
+		width: 90%;
+		margin:25px auto;
+	}
+	.sidebar {
+		width:100%;
+		margin:25px 0 0;
+		float:right;
+	}
+ 
+	.sidebar .side {
+		padding:5%;
+	}
+ 
+	.menu ul {
+		width: 100%;
+        text-align: center;
+	}
+ 
+	.menu ul {
+		float:inherit;
+	}
+ 
+	.menu ul li {
+		float:inherit;
+		margin:0;
+	}
+ 
+	.menu ul a {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid white;
+		border-bottom:1px solid white;
+	}
+ 
+	.content1 {
+		width:90%;
+	}
+ 
+	.content {
+		float:inherit;
+		margin:0 auto 25px;
+		width:101%;
+		border:1px solid #dedede;
+		padding:5%;  
+		background: #fff;
+	}
+ 
+}
+
+/* setting to make the web responsive in mobile device */
+@media screen and (max-width: 460px) {
+ 
+	.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+ 
+	.sidebar {
+		display:none
+    }
+ 
+	.content {
+		margin:25px auto;
+	}
+ 	
 }
