@@ -27,8 +27,6 @@ padding: 10px;
     color: white;
     font-size: 20pt;
     text-align: center;
-    position: relative;
-    clear: both;
 }
 
 /* setting for header */
@@ -46,7 +44,6 @@ width: 770px;
 line-height: 30px;
 background: #000;
 opacity: 0.7;
-list-style-type: none;
 padding-left: 30px;
 }
 .menu ul li {
@@ -88,7 +85,6 @@ padding-top: 10px;
     color: white;
     font-size: 16pt;
     text-align: center;
-    position: relative;
     clear:both;
 }
 
@@ -144,5 +140,7 @@ font-size: 14px;
  
 .content {
 margin:25px auto;
-}    
+}
+ 
+   
 }
