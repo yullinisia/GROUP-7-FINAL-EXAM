@@ -8,19 +8,9 @@ line-height: 20px;
 color: black;
      }
 
-a {
-  text-decoration: none;
-color: orchid;
-  }
-
-a:hover {
-text-decoration: underline;
-color: #FFA500;
-       }
-
 /* setting for layout */
-#wrap {
-margin:auto;
+.wrap {
+margin: 25px auto;
 width: 800px;
 background: rgba(255,255,255,0.7);
 padding: 10px;
@@ -28,7 +18,7 @@ padding: 10px;
 
 /* setting for runningtext */
 
-#runningtext{
+.runningtext{
     width: 100%;
     height: 30px;
     margin-top: 7px;
@@ -42,54 +32,53 @@ padding: 10px;
 }
 
 /* setting for header */
-#header {
+header {
+width: 100%;
 height: 250px;
-background: #554d42 url(sayangaladdin.jpeg);
+background-image:  url(sayangaladdin.jpeg);
 }
 
 /* setting for menu */
 
-#menu {
+.menu ul {
 height: 30px;
+width: 770px;
 line-height: 30px;
 background: #000;
 opacity: 0.7;
-}
-#menu ul {
 list-style-type: none;
 padding-left: 30px;
 }
-#menu ul li {
+.menu ul li {
 display: block;
 float: left;
 }
-#menu ul li a {
+.menu ul li a {
 padding: 0 20px 0 0;
 text-decoration: none;
 font-weight: 600;
 font-size: 12px;
 color: #fff;
 }
-#menu ul li a:hover {
+.menu ul li a:hover {
 color: #aaa;
 text-decoration: none;
 }
 
 /*setting for content */
 
-#content {
-padding: 0 20px 20px 0;
+.content {
+float: left;
 }
 
 .left {
-float: left;
 width: 800px;
 padding-top: 10px;
 }
 
 /* setting for for footer */
 
-#footer{
+.footer{
     width: 100%;
     height: 50px;
     margin-top: 5px;
@@ -103,3 +92,57 @@ padding-top: 10px;
     clear:both;
 }
 
+/* setting to make the web responsive */
+ 
+@media screen and (max-width: 960px) {
+   
+.header {
+position:inherit;
+}
+    .wrap {
+width: 80%;
+margin:25px auto;
+}
+   
+.menu ul {
+width: 92%;
+        text-align: center;
+}
+ 
+.menu ul {
+float:inherit;
+}
+ 
+.menu ul li {
+float:inherit;
+margin:0;
+}
+ 
+.menu ul li a {
+padding:15px;
+font-size: 16px;
+}
+ .content {
+width:90%;
+}
+ 
+.left {
+float:inherit;
+margin:0 auto 25px;
+width:101%;
+border:1px solid #dedede;
+padding:5%;  
+background: #fff;
+}
+}
+/* setting to make the web responsive in mobile device */
+@media screen and (max-width: 460px) {
+    .menu ul a {
+padding:15px;
+font-size: 14px;
+}
+ 
+.content {
+margin:25px auto;
+}    
+}
