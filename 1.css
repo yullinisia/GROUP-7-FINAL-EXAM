@@ -16,7 +16,7 @@ header{
 /* setting for the wrapper */
 .wrap {
 	width: 950px;
-	margin:25px auto;
+	margin:25px auto; /* for the top */
 }
 
 /*setting for the menu */
@@ -32,7 +32,6 @@ header{
 }
  
 .menu ul li {
-	margin:0;
 	float:left;
 }
  
@@ -42,7 +41,7 @@ header{
 	font-weight:600;
 	font-size: 14px;
 	color:#fff;
-	text-decoration: none;
+	text-decoration: none; /* for the menu text */
 }
  
 .menu ul a:hover {
