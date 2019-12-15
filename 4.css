@@ -15,6 +15,7 @@ width: 800px;
 background: rgba(255,255,255,0.7);
 padding: 10px;
 }
+
 /* setting for runningtext */
 
 .runningtext{
@@ -28,4 +29,120 @@ padding: 10px;
     text-align: center;
     position: relative;
     clear: both;
+}
+
+/* setting for header */
+header {
+width: 100%;
+height: 250px;
+background-image:  url(sayangaladdin.jpeg);
+}
+
+/* setting for menu */
+
+.menu ul {
+height: 30px;
+width: 770px;
+line-height: 30px;
+background: #000;
+opacity: 0.7;
+list-style-type: none;
+padding-left: 30px;
+}
+.menu ul li {
+display: block;
+float: left;
+}
+.menu ul li a {
+padding: 0 20px 0 0;
+text-decoration: none;
+font-weight: 600;
+font-size: 12px;
+color: #fff;
+}
+.menu ul li a:hover {
+color: #aaa;
+text-decoration: none;
+}
+
+/*setting for content */
+
+.content {
+float: left;
+}
+
+.left {
+width: 800px;
+padding-top: 10px;
+}
+
+/* setting for for footer */
+
+.footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    padding-top: 10px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    font-size: 16pt;
+    text-align: center;
+    position: relative;
+    clear:both;
+}
+
+/* setting to make the web responsive */
+ 
+@media screen and (max-width: 960px) {
+   
+.header {
+position:inherit;
+}
+    .wrap {
+width: 80%;
+margin:25px auto;
+}
+   
+.menu ul {
+width: 92%;
+        text-align: center;
+}
+ 
+.menu ul {
+float:inherit;
+}
+ 
+.menu ul li {
+float:inherit;
+margin:0;
+}
+ 
+.menu ul li a {
+padding:15px;
+font-size: 16px;
+}
+ .content {
+width:90%;
+}
+ 
+.left {
+float:inherit;
+margin:0 auto 25px;
+width:101%;
+border:1px solid #dedede;
+padding:5%;  
+background: #fff;
+}
+}
+/* setting to make the web responsive in mobile device */
+@media screen and (max-width: 460px) {
+    .menu ul a {
+padding:15px;
+font-size: 14px;
+}
+ 
+.content {
+margin:25px auto;
+}    
 }
