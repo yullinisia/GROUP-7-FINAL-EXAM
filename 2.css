@@ -1,7 +1,6 @@
 *{
 padding: 0;
 margin: 0;
-box-sizing: border-box;
 }
 /* setting for runningtext */
 .runningtext{
@@ -25,8 +24,7 @@ font-family : 'Verdana',arial,sans-serif;
 }
 
 p{
-margin-bottom : 20px;
-line-height : 1.5em;
+margin-bottom : 20px; /*distance between naomi scott and the paragraf about her*/
     text-align: left;
     color: black;
     font-size : 20px;
@@ -35,7 +33,6 @@ line-height : 1.5em;
 
 /*to changed the setting -distance- line under text:menu*/
 h3{
-margin-bottom : 20px;
 border-bottom : 5px solid #993300;
 }
 
@@ -63,7 +60,7 @@ padding : 20px;
 
 /* setting for the "aladdin cast" */
 .header{
-    width: auto;
+width: auto;
 border : 1px solid #dedede;
 padding : 100px;
 margin : 30px;
@@ -72,7 +69,7 @@ background-image: url(gemey.jpg);
 
 /* main */
 /* setting for the left box border */
-/*setting garis tepi kotak kiri*/
+
 .left{
 width : 250px;
 border : 5px solid #993300;
@@ -96,7 +93,7 @@ color    : chocolate;
 
 .middle{
 width : 600px;
-border-color : 5px chocolate; /*garis tepi main box:biru*/
+
 padding : 10px; /*atur jarak dengan tepi main box konten ini */
 margin : 10px; /*atur jarak dengan header*/
 float : left;
